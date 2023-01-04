@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.TasbehFragment"
+    android:background="@drawable/mainbackground">
+
+
+
+    <ImageView
+        android:id="@+id/itemSebha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sebha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_tasbeh"
+        app:layout_constraintBottom_toBottomOf="@id/spinner_tasbeha"
+        app:layout_constraintEnd_toEndOf="@id/spinner_tasbeha"
+        app:layout_constraintTop_toTopOf="@id/spinner_tasbeha" />
+
+    <TextView
+        android:textStyle="bold"
+
+        android:id="@+id/textView3"
+        style="@style/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="التسبيحة"
+        android:textSize="25sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/tasbeha_count"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/recount"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintBottom_toTopOf="@+id/itemSebha"
+        app:layout_constraintEnd_toStartOf="@+id/tasbeha_count"
+        app:layout_constraintStart_toEndOf="@+id/magmo3Tasby7atCount"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_tasbeha"
+        android:layout_marginTop="150dp"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textView2"
+        style="@style/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="مجموع \nالتسبيحات "
+        android:gravity="center"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/magmo3Tasby7atCount"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Spinner
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:paddingEnd="25dp"
+        android:id="@+id/spinner_tasbeha"
+        android:layout_width="wrap_content"
+
+        android:layout_height="0dp"
+        android:entries="@array/tasbeh"
+        android:padding="8dp"
+        style="@style/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tasbeha_count"
+        style="@style/textglow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:padding="15dp"
+        android:hint="0"
+        android:fontFamily="@font/alquranareem"
+        app:layout_constraintBottom_toTopOf="@+id/itemSebha"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/magmo3Tasby7atCount"
+        style="@style/textglow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:padding="15dp"
+        android:hint="0"
+        android:fontFamily="@font/alquranareem"
+        app:layout_constraintBottom_toTopOf="@+id/itemSebha"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

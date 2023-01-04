@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SuraDetailsActivity"
+    android:background="@drawable/sora_background">
+
+    <TextView
+        android:id="@+id/sura_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerview_aya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="  الفاتحة  "
+        android:textSize="70sp"
+
+        android:fontFamily="@font/alquranareem"
+
+        android:textStyle="bold"
+        android:textColor="@color/colorOnPrimary"
+        android:shadowColor="@color/text_shadow_white"
+        android:shadowDx="5"
+        android:shadowDy="6"
+        android:shadowRadius="1"
+
+       />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_aya"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.48"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_aya"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
