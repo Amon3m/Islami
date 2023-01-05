@@ -10,7 +10,6 @@ An Islamic application to read Quran, Ahadeth , counter for counting Zeker numbe
 - full Moshaf
 - 50 hadeth
 - counter for counting Zeker numbers
-- Cross platform
 
 
 ## It's practices by kotiln on
