@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
-import android.widget.Toast
-import android.widget.Toast.LENGTH_SHORT
 import com.m3.islami2.base.BaseFragment
 import com.m3.islami2.databinding.FragmentTasbehBinding
 

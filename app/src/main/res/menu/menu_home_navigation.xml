@@ -22,4 +22,10 @@
         android:icon="@drawable/ic_tasbehe"
         />
 
+    <item
+        android:id="@+id/navigation_radio"
+        android:title="Radio"
+        android:icon="@drawable/ic_icon"
+        />
+
 </menu>

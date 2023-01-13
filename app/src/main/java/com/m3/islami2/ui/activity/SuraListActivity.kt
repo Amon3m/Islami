@@ -33,16 +33,19 @@ class SuraListActivity : AppCompatActivity() {
                 startSuraDetailsActivity(position,name)
 
             }
-        }}
+        }
+    }
 
 
 
 
     private fun startSuraDetailsActivity(position: Int, name: String) {
-       var fileName=""+(position+1)+".txt"
+        var fileName=""+(position+1)+".txt"
+
         intent = Intent(this, SuraDetailsActivity::class.java)
         intent.putExtra(Conestent.Extra_Sura_name,name)
         intent.putExtra(Conestent.Extra_File_name,fileName)
         startActivity(intent)
 
-    }}
+    }
+}
