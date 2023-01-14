@@ -1,17 +1,13 @@
 package com.m3.islami2.ui.activity
 
-import android.content.DialogInterface
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.google.android.material.navigation.NavigationBarView
-import com.google.android.material.snackbar.Snackbar
 import com.m3.islami2.R
 import com.m3.islami2.base.BaseActivity
 import com.m3.islami2.databinding.ActivityHomeBinding
 import com.m3.islami2.ui.fragment.HadethFragment
 import com.m3.islami2.ui.fragment.QuranFragment
+import com.m3.islami2.ui.fragment.RadioFragment
 import com.m3.islami2.ui.fragment.TasbehFragment
 
 
@@ -34,12 +30,16 @@ class HomeActivity : BaseActivity() {
             else if (item.itemId==R.id.navigation_tasbeh){
                 pushFragmet(TasbehFragment())
 
+
 //                Snackbar.make(binding.root,"aaa",Snackbar.LENGTH_LONG).setAction("REtry"){}
 //                    .show()
 //              AlertDialog.Builder(this).setTitle("azyk").setMessage("3amel eh").setCancelable(true).setPositiveButton("yes"){
 //                      dialogInterface: DialogInterface, it->finish()
 //              }.show()
         }
+          else if (item.itemId==R.id.navigation_radio){
+              pushFragmet(RadioFragment())
+          }
             true }
         binding.navigation.selectedItemId=R.id.navigation_quran
     }

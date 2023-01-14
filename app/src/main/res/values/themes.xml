@@ -32,5 +32,11 @@
         <item name="android:textSize">25sp</item>
         <item name="android:textColor">@color/white</item>
     </style>
+    <style name="glow" >
+        <item name="android:backgroundTint">@drawable/glowo</item>
+        <item name="android:textSize">25sp</item>
+        <item name="color">@color/colorOnPrimary</item>
+
+    </style>
 
 </resources>
