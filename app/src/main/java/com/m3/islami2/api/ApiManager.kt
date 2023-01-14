@@ -16,7 +16,7 @@ class ApiManager {
              //for log
               val interceptor = HttpLoggingInterceptor(object :HttpLoggingInterceptor.Logger{
                   override fun log(message: String) {
-                      Log.e("api","message")
+                      Log.e("api",message)
                   }
 
               })
@@ -26,7 +26,7 @@ class ApiManager {
 
             retrofit=Retrofit.Builder()
                 .client(client)
-                .baseUrl("https://mp3quran.net/api/v3/")
+                .baseUrl("https://mp3quran.net/")
                 .addConverterFactory(GsonConverterFactory.create()).build()
           }
           return retrofit!!

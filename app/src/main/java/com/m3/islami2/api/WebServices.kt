@@ -7,6 +7,6 @@ import retrofit2.http.GET
 
 interface WebServices  {
 
-    @GET("radios?language=ar")
+    @GET("api/v3/radios?language=ar")
     fun getRadioChannels():Call<RadioResponse>
 }
